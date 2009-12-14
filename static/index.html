@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<title>Twitter2Mail - @replies to Your Inbox!</title>
+<link rel="shortcut icon" href="/static/t2mail.gif"/> 
+<link rel="stylesheet" href="/static/core.css" type="text/css"/>
+<script type="text/javascript" src="/static/prototype-1.6.0.3.js"></script>
+<script type="text/javascript" src="/static/twitter2mail.js"></script>
+
+</head>
+
+<body>
+<div id="container">
+<div id="apps">
+Our other handy apps &rarr;
+<a title="FriendFeed-to-Disqus" href="https://ff2disqus.appspot.com"><img src="https://ff2disqus.appspot.com/static/ff2d.png" height="16" width="16" border="0"/></a>
+<a title="Twitter-to-FriendFeed" href="https://twitter2ff.appspot.com"><img src="https://twitter2ff.appspot.com/static/t2ff_icon.png" height="16" width="16" border="0"/></a>
+</div>
+<img style="float:left;margin-right:5px" src="/static/t2mail.gif"/>
+<div id="header">Twitter2Mail<div style="margin-left:5px">alpha v0.2 - your mileage may vary!</div></div>
+<p>Written by Carter Rabasa <a href="http://cubanlinks.org">[web]</a> <a href="http://friendfeed.com/cubanlinks">[ff]</a> <a href="http://twitter.com/cubanlinks">[t]</a></p>
+<p><a href="http://cubanlinks.org/blog/2009/01/12/twitter2mail/">Twitter2Mail</a> is a simple app that monitors <a href="http://search.twitter.com">search.twitter.com</a> and emails you your replies.
+Simply enter your Twitter username and email address. Once your information is saved any new replies will be emailed to you every 15 minutes.
+Curious about what makes us different from every other @reply emailer?</p>
+<ul>
+<li>Digest and non-digest modes.  Non-digest mode will send <a href="http://www.flickr.com/photos/cubanlinks/3198739889/">super-concise</a> emails for
+each @reply. Get these via text message by inputing your <a href="http://en.wikipedia.org/wiki/SMS_gateways#Carrier-provided_email_or_web_to_SMS_gateways">mobile email number</a>.</li>
+<li>Links to <a href="https://twitter2mail.appspot.com/thread?id=1117632932">view threads</a> in digest mode emails. Great for seeing what someone was
+replying to!</li>
+</ul>
+<div style="text-align:center;background-color:#A1BAF6;padding:3px">Enjoying Twitter2Mail? <a href="http://twitter.com/home?status=I%27m+getting+my+%40replies+via+email%2FSMS+with+twitter2mail+from+%40twit2apps">Support us on Twitter</a>. Thanks!</div>
+<div id="form">
+<p>Twitter Username: <input id="username" type="text" size="16" value=""/>
+Email Address: <input type="text" id="email" size="19" value=""/></p>
+<p>Reply Mode: <select id="reply_mode">
+<!--option value="0">Off</option-->
+<option value="1">Replies to you</option>
+<option value="2">Tweets referencing you</option>
+</select>
+Digest? Yes <input type="radio" name="digest" value="yes" checked="true"/> No <input type="radio" name="digest" value="no"/>
+</p>
+<p><input id="save_button" type="button" value="Save Info" onClick="saveUser()"/> or
+<input id="rss_button" type="button" value="Create RSS Link" onClick="createLink()"/> or
+<input id="unsub_button" type="button" value="Unsubscribe" onClick="unSubscribe()"/></p>
+<div id="rss" style="display:none">
+<img src="/static/rss.png" height="16" width="16"/>
+<span id="rss_link"></span>
+</div>
+</div>
+<div style="margin-top:10px">
+<img src="/static/t2mail_screen.png" title="Screen-shot of @replies being delivered to your inbox"/>
+</div>
+</div>
+</body>
+</html>

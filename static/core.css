@@ -1,0 +1,18 @@
+body {text-align:center; margin: 20px 0}
+body, p, div, h1 {
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+body, p, div {font-size:13px}
+img {border:0}
+li {margin:5px}
+#container {width:600px; margin:0 auto; text-align:left;border-left: 1px dashed #ccc; border-right: 1px dashed #ccc; padding:0 20px 0 20px}
+#header {font-size: 24px;line-height:20px}
+h2 {font-size: 16px}
+#form {border: 3px solid #A1BAF6;background-color: #D9E1F2;padding:10px;}
+#message {background-color:#FFFFE0;padding:4px;font-size:12px;margin:3px;}
+#disclaimer {background-color:#FFE4E1;padding:4px;}
+#disclaimer ul {margin-top:3px}
+#disclaimer li {margin-top:3px}
+#apps {float:right;}
+#unsub_button{color:red}
+#rss_link{font-size:10px}

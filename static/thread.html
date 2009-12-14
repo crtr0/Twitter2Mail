@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<title>Twitter2Mail - @replies to Your Inbox!</title>
+<link rel="shortcut icon" href="/static/t2mail.gif"/> 
+<link rel="stylesheet" href="/static/core.css" type="text/css"/>
+<script type="text/javascript" src="/static/prototype-1.6.0.3.js"></script>
+<script type="text/javascript" src="/static/twitter2mail.js"></script>
+<style>
+li {list-style: none; padding:5px}
+.avatar {float:left;}
+.msg {margin-left:75px}
+.info {margin-left:75px;font-size:75%;color:#999}
+.featured {background-color:#FFFFE0; padding:5px}
+h1 {font-size:16px}
+</style>
+</head>
+
+<body onLoad="getThread()">
+<div id="container">
+<div id="apps">
+Our other handy apps &rarr;
+<a title="FriendFeed-to-Disqus" href="https://ff2disqus.appspot.com"><img src="https://ff2disqus.appspot.com/static/ff2d.png" height="16" width="16" border="0"/></a>
+<a title="Twitter-to-FriendFeed" href="https://twitter2ff.appspot.com"><img src="https://twitter2ff.appspot.com/static/t2ff_icon.png" height="16" width="16" border="0"/></a>
+</div>
+<img style="float:left;margin-right:5px" src="/static/t2mail.gif"/>
+<div id="header">Twitter2Mail<div style="margin-left:5px">alpha v0.1 - your mileage may vary!</div></div>
+<p>Written by Carter Rabasa <a href="http://cubanlinks.org">[web]</a> <a href="http://friendfeed.com/cubanlinks">[ff]</a> <a href="http://twitter.com/cubanlinks">[t]</a></p>
+<h1>View Thread</h1>
+<div id="thread"></div>
+</div>
+</body>
+</html>
