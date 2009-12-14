@@ -1,0 +1,6 @@
+This directory (cron_job) IS NOT part of the AppEngine application.
+
+This is a script that you set-up to be executed (via cron) at regular intervals
+to check for new messages to be mailed to your users.
+
+DISCLAIMER: This cron_job was necessary because this app was first written when the Google AppEngine did not support jobs.  Now that it does, you can probably use some of this code to right a proper job task that checks for new messages and sends mail from within the AppEngine environment.
